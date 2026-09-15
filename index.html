@@ -68,6 +68,7 @@
       color: #003824;
     }
   </style>
+<!-- Playlist image is embedded directly so it works on GitHub Pages and Netlify without a separate image upload. -->
 </head>
 <body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col">
 <!-- 1. STICKY TOP NAVIGATION BAR -->
@@ -92,6 +93,7 @@
 <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-[14px] font-medium text-on-surface-variant">
 <a class="px-3.5 py-2 rounded-lg text-primary font-semibold hover:bg-surface-container-high transition-colors" href="#">Home</a>
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#curriculum">Java Course</a>
+<a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#java-playlist">Videos</a>
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#lectures">50+ Lectures</a>
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#roadmap">DSA Roadmap</a>
 <a class="px-3.5 py-2 rounded-lg hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#practice">Practice</a>
@@ -99,7 +101,7 @@
 </nav>
 <!-- Right CTAs -->
 <div class="flex items-center gap-3 shrink-0"><a aria-label="WhatsApp Channel" title="Join WhatsApp Channel" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-primary/10 border border-primary/30 hover:bg-primary/20 text-primary transition-all duration-200 shadow-sm" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" target="_blank" rel="noopener noreferrer"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></a><a aria-label="LinkedIn Profile" title="Connect on LinkedIn" class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-secondary/10 border border-secondary/30 hover:bg-secondary/20 text-secondary transition-all duration-200 shadow-sm" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer"><svg class="w-[16px] h-[16px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a>
-<a class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-[13px] font-semibold transition-all duration-200 shadow-[0_0_16px_rgba(220,38,38,0.35)]" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+<a class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-[13px] font-semibold transition-all duration-200 shadow-[0_0_16px_rgba(220,38,38,0.35)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px]">smart_display</span>
 <span class="">YouTube</span>
 </a>
@@ -116,9 +118,9 @@
 <!-- Glow Gradients -->
 <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[800px] h-[380px] bg-gradient-to-b from-primary/15 via-secondary/10 to-transparent blur-3xl pointer-events-none rounded-full"></div>
 <div class="max-w-[1280px] mx-auto px-6 relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
 <!-- Left Column -->
-<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="lg:col-span-5 flex flex-col gap-6">
 <!-- Pill -->
 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-high border border-primary/30 w-fit">
 <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
@@ -140,7 +142,7 @@
 <span class="">Start Learning</span>
 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
-<a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-container border border-surface-variant text-on-surface font-headline-sm text-sm font-semibold hover:bg-surface-container-high transition-all" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+<a class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-container border border-surface-variant text-on-surface font-headline-sm text-sm font-semibold hover:bg-surface-container-high transition-all" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[#ff7a73] text-[20px]">play_circle</span>
 <span class="">Watch on YouTube</span>
 </a>
@@ -160,64 +162,31 @@
 <p class="text-xs text-on-surface-variant mt-0.5">Watch all 50+ high-definition lectures in order, 100% free.</p>
 </div>
 </div>
-<a class="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white font-headline-sm text-xs font-bold transition-all shadow-[0_0_18px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+<a class="shrink-0 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white font-headline-sm text-xs font-bold transition-all shadow-[0_0_18px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[16px]">subscriptions</span>
 <span class="">Subscribe on YouTube</span>
 </a>
 </div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-1"><a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low border border-primary/30 hover:border-primary/60 hover:bg-surface-container transition-all group shadow-md" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"><svg class="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg></div><div class="flex flex-col"><span class="font-headline-sm text-xs font-bold text-on-surface group-hover:text-primary transition-colors">WhatsApp Channel</span><span class="text-[11px] text-on-surface-variant">Notes, PDF Slides &amp; Lecture Drops</span></div></div><span class="material-symbols-outlined text-[16px] text-primary group-hover:translate-x-0.5 transition-transform">arrow_forward</span></a><a class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low border border-secondary/30 hover:border-secondary/60 hover:bg-surface-container transition-all group shadow-md" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform"><svg class="w-[16px] h-[16px] fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></div><div class="flex flex-col"><span class="font-headline-sm text-xs font-bold text-on-surface group-hover:text-secondary transition-colors">Connect on LinkedIn</span><span class="text-[11px] text-on-surface-variant">Anmol Singh • Mentor Profile</span></div></div><span class="material-symbols-outlined text-[16px] text-secondary group-hover:translate-x-0.5 transition-transform">arrow_forward</span></a></div>
 </div>
-<!-- Right Column: Interactive Code Graphic with Official Brand Emblem -->
-<div class="lg:col-span-5">
-<div class="relative rounded-2xl bg-surface-container-lowest border border-surface-container-highest shadow-2xl overflow-hidden">
-<!-- Window Bar -->
-<div class="flex items-center justify-between px-4 py-3 bg-surface-container border-b border-surface-container-highest">
-<div class="flex items-center gap-2">
-<span class="w-3 h-3 rounded-full bg-[#ef4444]"></span>
-<span class="w-3 h-3 rounded-full bg-[#eab308]"></span>
-<span class="w-3 h-3 rounded-full bg-primary"></span>
-<span class="ml-2 font-label-mono-sm text-xs text-on-surface-variant">LearnWithAnmol.java</span>
-</div>
-<span class="font-label-mono-sm text-[11px] text-primary flex items-center gap-1 font-semibold">
-<span class="material-symbols-outlined text-[14px]">verified</span>
-                  JDK 21 LTS
-                </span>
-</div>
-<!-- Code Content -->
-<div class="p-5 font-code-block text-[13px] leading-relaxed text-on-surface overflow-x-auto space-y-1">
-<p class=""><span class="text-secondary font-semibold">package</span> edu.learnwithanmol;</p>
-<br>
-<p class=""><span class="text-primary font-bold">public class</span> <span class="text-secondary font-bold">JavaDsaRoadmap</span> {</p>
-<p class="pl-4"><span class="text-primary font-bold">public static void</span> <span class="text-secondary">main</span>(String[] args) {</p>
-<p class="pl-8 text-on-surface-variant/70">// 50+ Comprehensive Lectures</p>
-<p class="pl-8">Masterclass master = <span class="text-primary">new</span> Masterclass();</p>
-<p class="pl-8">master.enroll(<span class="text-tertiary">"Core Java Basics &amp; OOP"</span>);</p>
-<p class="pl-8">master.enroll(<span class="text-tertiary">"Collections &amp; Frameworks"</span>);</p>
-<p class="pl-8">master.enroll(<span class="text-tertiary">"Data Structures &amp; Algorithms"</span>);</p>
-<p class="pl-8">master.startYouTubeTrack(<span class="text-tertiary">"@LEARNWITHANMOL-q3i"</span>);</p>
-<br>
-<p class="pl-8"><span class="text-primary">System.out.println</span>(<span class="text-primary-fixed">"Ready to crack technical interviews! 🚀"</span>);</p>
-<p class="pl-4">}</p>
-<p class="">}</p>
-</div>
-<!-- Card Bottom Bar: Strictly Official Brand Seal -->
-<div class="flex items-center justify-between px-4 py-3 bg-surface-container border-t border-surface-container-highest">
-<div class="flex items-center gap-3">
-<img alt="Official Emblem" class="w-9 h-9 rounded-full object-cover ring-2 ring-primary/40 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATmdsY3Qe5cEDxBLevLrDXnDxhUEBMiA8CCZBCBCeS0K_fAEJG6AIBtlfRtyrAgyb1__ad-YlzgNQTTqUBt5jTa8Cb8o4rG1rufTVujHnbSgef3wbULbMr0e8P3XSfsmYNoljy2CcaMvt-4NkmPXCsElwSKUDzZoaUd_54rtmLYEATx1ks2LWERJ0AIofgVveMJByCg29_IcfFNL2AFjsk4P2PebsN4as9XWUd1RUbvvQ92ZAAS7HggZHaXzBpdyC-e_I">
-<div class="flex flex-col">
-<span class="font-headline-sm text-xs font-bold text-on-surface">LEARN WITH ANMOL</span>
-<span class="font-label-mono-sm text-[10px] text-primary">Certified Developer Curriculum</span>
-</div>
-</div>
-<div class="flex items-center gap-1.5 text-xs text-on-surface-variant font-label-mono-sm">
-<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-<span class="">Build: Success</span>
-</div>
-</div>
-</div>
-</div>
+<!-- Right Column: Large Java Playlist Preview -->
+<div class="lg:col-span-7">
+  <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="block group">
+    <div class="relative rounded-2xl bg-surface-container-lowest border border-primary/40 shadow-2xl overflow-hidden hover:border-primary/70 transition-all duration-300 hover:-translate-y-1">
+      <img src="java-playlist.png" alt="Complete Java Tutorial in Hindi by Learn With Anmol" class="w-full h-auto block object-contain transition-transform duration-500 group-hover:scale-[1.01]">
+      <div class="px-5 py-4 bg-surface-container border-t border-surface-container-highest flex items-center justify-between gap-3">
+        <div>
+          <p class="text-base font-bold text-on-surface">Complete Java Tutorial in Hindi</p>
+          <p class="text-xs text-on-surface-variant mt-1">31 Videos • Core Java • Beginner Friendly • Free</p>
+        </div>
+        <span class="material-symbols-outlined text-primary text-2xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </div>
+    </div>
+  </a>
+</div></div>
 </div>
 </div>
 </section>
+<!-- 3. FEATURE CARDS SECTIONn>
 <!-- 3. FEATURE CARDS SECTION (Why Learn With Anmol & Core Pillars) -->
 <section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-lowest/50" id="about">
 <div class="max-w-[1280px] mx-auto px-6">
@@ -353,7 +322,7 @@
           </div>
         </div>
         <div class="pt-6 mt-6 border-t border-surface-container-highest/60 flex items-center justify-between">
-          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-xs font-bold transition-all shadow-[0_0_18px_rgba(16,185,129,0.35)]" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary text-xs font-bold transition-all shadow-[0_0_18px_rgba(16,185,129,0.35)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
             <span class="material-symbols-outlined text-[18px]">play_circle</span>
             <span class="">Start Watching</span>
           </a>
@@ -394,7 +363,7 @@
           </div>
         </div>
         <div class="pt-6 mt-6 border-t border-surface-container-highest flex items-center justify-between">
-          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-xs font-bold transition-all shadow-[0_0_18px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-xs font-bold transition-all shadow-[0_0_18px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
             <span class="material-symbols-outlined text-[18px]">play_circle</span>
             <span class="">Start Watching</span>
           </a>
@@ -434,12 +403,65 @@
           </div>
         </div>
         <div class="pt-6 mt-6 border-t border-surface-container-highest/60 flex items-center justify-between">
-          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-xs font-bold border border-surface-variant transition-all" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+          <a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-xs font-bold border border-surface-variant transition-all" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
             <span class="material-symbols-outlined text-[18px] text-secondary">play_circle</span>
             <span class="">Start Watching</span>
           </a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3B. JAVA YOUTUBE PLAYLIST SHOWCASE -->
+<section class="py-20 border-b border-surface-container-highest/40 bg-surface-container-low/30" id="java-playlist">
+  <div class="max-w-[1280px] mx-auto px-6">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-10">
+      <div>
+        <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">JAVA VIDEO SERIES</span>
+        <h2 class="font-headline-xl text-3xl sm:text-4xl font-extrabold text-on-surface mt-2 tracking-tight">Complete Java Tutorial in Hindi</h2>
+        <p class="text-sm sm:text-base text-on-surface-variant mt-3 max-w-2xl leading-relaxed">
+          Watch the complete Learn With Anmol Java playlist. Every video thumbnail is clickable and opens the YouTube lesson.
+        </p>
+      </div>
+      <a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white text-sm font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)] shrink-0" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[19px]">playlist_play</span>
+        <span>Open Full Playlist</span>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-7 items-stretch">
+      <!-- Uploaded playlist preview image -->
+      <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-surface-container-highest bg-surface-container shadow-2xl">
+        <img src="java-playlist.png" alt="Learn With Anmol Complete Java Tutorial YouTube Playlist" class="w-full h-auto aspect-video object-contain object-center transition-transform duration-500 group-hover:scale-[1.02]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent"></div>
+        <div class="absolute left-5 right-5 bottom-5 flex items-center justify-between gap-3">
+          <div>
+            <span class="text-[11px] uppercase tracking-wider font-bold text-white/70">Official Playlist</span>
+            <h3 class="text-lg font-bold text-white mt-1">Complete Java Tutorial</h3>
+          </div>
+          <span class="w-12 h-12 rounded-full bg-[#dc2626] text-white flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-[27px]">play_arrow</span>
+          </span>
+        </div>
+      </a>
+
+      <!-- Playlist action card -->
+      <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="lg:col-span-2 rounded-2xl overflow-hidden border border-surface-container-highest bg-surface-container shadow-2xl group flex flex-col justify-between hover:border-primary/60 transition-all duration-300 hover:-translate-y-1">
+        <div class="p-6">
+          <span class="font-label-mono-sm text-xs text-[#ff7a73] font-bold uppercase tracking-wider">31 VIDEO PLAYLIST</span>
+          <h3 class="text-2xl font-extrabold text-on-surface mt-2">Learn With Anmol — Java Playlist</h3>
+          <p class="text-sm text-on-surface-variant mt-3 leading-relaxed">Watch Lecture 1 to Lecture 31 directly on YouTube. Click here to open the complete playlist.</p>
+          <div class="mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#dc2626] text-white text-sm font-bold shadow-lg">
+            <span class="material-symbols-outlined text-[19px]">play_circle</span>
+            Open Java Playlist
+          </div>
+        </div>
+        <div class="px-6 py-4 border-t border-surface-container-highest bg-surface-container-low flex items-center justify-between">
+          <span class="text-xs text-on-surface-variant">Complete Java Tutorial in Hindi</span>
+          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -692,8 +714,8 @@
               From first principles to advanced algorithmic thinking. Step-by-step videos organized to deliver maximum clarity.
             </p>
 </div>
-<a class="text-xs font-label-mono-sm text-primary hover:underline flex items-center gap-1 shrink-0" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
-<span class="">Open All Playlists on YouTube</span>
+<a class="text-xs font-label-mono-sm text-primary hover:underline flex items-center gap-1 shrink-0" href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" rel="noopener noreferrer" target="_blank">
+<span class="">Open Java Playlist on YouTube</span>
 <span class="material-symbols-outlined text-[16px]">open_in_new</span>
 </a>
 </div>
@@ -840,33 +862,11 @@
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-6">
 <!-- Video Mockup Shell with Official Logo Overlay -->
-<div class="lg:col-span-7 flex flex-col gap-4">
-<div class="relative aspect-video w-full rounded-xl bg-surface-container-lowest border border-surface-container-highest overflow-hidden shadow-2xl flex items-center justify-center">
-<!-- Video Screen Overlay -->
-<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-black/50 p-4 flex flex-col justify-between z-10">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-2.5">
-<img alt="LEARN WITH ANMOL Official Emblem" class="w-7 h-7 rounded-full object-cover ring-2 ring-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBITFT1MwgpqospQbifgJ5c5xA-VVusRjjKHCjGYvlInT0gmuuL3b92IrWiPM6D6GagVbxDOs_YjxZ7vTSQCccs5VhaIigkE9RYhr-hHoWqzViAKIyhu7XifYslD7KQn-Fo8RU4zfR2is2Fe0zAUyTypEZ-wbwpsGNek_Vd-IAdo4cMzukrDVB75FydA8PPQ3NIttGvc7CnXUIkWD1NbsFHEUWEVMMAktzUVmLTxzWNkcAr1qW17F4rUyeHW66IDCBpnwQ">
-<span class="font-headline-sm text-xs font-bold text-white">LEARN WITH ANMOL • 1080p60</span>
-</div>
-<span class="px-2 py-0.5 rounded text-[10px] font-label-mono-sm bg-[#dc2626] text-white">YouTube</span>
-</div>
-<!-- Central Play Trigger -->
-<a class="self-center w-14 h-14 rounded-full bg-[#dc2626] hover:bg-[#ef4444] text-white flex items-center justify-center shadow-xl hover:scale-110 transition-transform" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[32px]">play_arrow</span>
+<div class="lg:col-span-7 lg:order-2 flex flex-col gap-4">
+<a href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank" aria-label="Watch Lecture 30 — Singly LinkedList Implementation in Java on YouTube" class="relative aspect-video w-full rounded-xl bg-surface-container-lowest border border-surface-container-highest overflow-hidden shadow-2xl flex items-center justify-center group">
+<img src="lecture30-linkedlist.png" alt="Lecture 30 — Singly LinkedList Implementation in Java" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-[1.01]">
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
 </a>
-<!-- Bottom Tracker -->
-<div class="w-full flex flex-col gap-1.5 text-xs text-white">
-<div class="w-full bg-white/25 h-1.5 rounded-full overflow-hidden">
-<div class="bg-[#dc2626] h-full w-2/5"></div>
-</div>
-<div class="flex items-center justify-between text-[11px] font-label-mono-sm">
-<span class="">16:40 / 42:18</span>
-<span class="">Watch in Full HD</span>
-</div>
-</div>
-</div>
-</div>
 <!-- Topics Covered Pill Grid -->
 <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-highest/60">
 <span class="text-xs font-label-mono-sm text-primary uppercase font-bold">Key Lecture Insights</span>
@@ -891,7 +891,7 @@
 </div>
 </div>
 <!-- Code Implementation Snippet -->
-<div class="lg:col-span-5 flex flex-col justify-between">
+<div class="lg:col-span-5 lg:order-1 flex flex-col justify-between">
 <div class="rounded-xl bg-surface-container-lowest border border-surface-container-highest overflow-hidden shadow-md flex-1 flex flex-col">
 <div class="flex items-center justify-between px-4 py-2.5 bg-surface-container-high border-b border-surface-container-highest">
 <span class="font-label-mono-sm text-xs text-on-surface font-semibold">Node.java</span>
@@ -918,7 +918,7 @@
 </div>
 <div class="px-4 py-2.5 bg-surface-container-high border-t border-surface-container-highest flex items-center justify-between">
 <span class="font-label-mono-sm text-[11px] text-on-surface-variant">Time: O(1) | Space: O(1)</span>
-<a class="text-xs font-label-mono-sm text-primary hover:underline" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+<a class="text-xs font-label-mono-sm text-primary hover:underline" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
                     Watch Full Lesson →
                   </a>
 </div>
@@ -962,7 +962,7 @@
 <p class="text-xs text-on-surface-variant mt-0.5">Pointer reversal with O(1) auxiliary space using iterative three-pointer technique.</p>
 </div>
 </div>
-<a class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-[#dc2626] hover:text-white text-on-surface text-xs font-label-mono-sm font-semibold flex items-center gap-1.5 transition-colors shrink-0" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+<a class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-[#dc2626] hover:text-white text-on-surface text-xs font-label-mono-sm font-semibold flex items-center gap-1.5 transition-colors shrink-0" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[16px]">smart_display</span>
 <span class="">Watch Video Solution</span>
 </a>
@@ -979,7 +979,7 @@
 <p class="text-xs text-on-surface-variant mt-0.5">Optimal single-pass complement hashing reducing time complexity from O(n²) to O(n).</p>
 </div>
 </div>
-<a class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-[#dc2626] hover:text-white text-on-surface text-xs font-label-mono-sm font-semibold flex items-center gap-1.5 transition-colors shrink-0" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+<a class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-[#dc2626] hover:text-white text-on-surface text-xs font-label-mono-sm font-semibold flex items-center gap-1.5 transition-colors shrink-0" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[16px]">smart_display</span>
 <span class="">Watch Video Solution</span>
 </a>
@@ -996,7 +996,7 @@
 <p class="text-xs text-on-surface-variant mt-0.5">Queue-based breadth-first iterative exploration printing nodes level-by-level.</p>
 </div>
 </div>
-<a class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-[#dc2626] hover:text-white text-on-surface text-xs font-label-mono-sm font-semibold flex items-center gap-1.5 transition-colors shrink-0" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+<a class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-[#dc2626] hover:text-white text-on-surface text-xs font-label-mono-sm font-semibold flex items-center gap-1.5 transition-colors shrink-0" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[16px]">smart_display</span>
 <span class="">Watch Video Solution</span>
 </a>
@@ -1019,7 +1019,7 @@
                 Subscribe to LEARN WITH ANMOL on YouTube for the full video series, regular lecture drops, and step-by-step problem breakdowns.
               </p>
 <div class="flex flex-wrap items-center gap-4 pt-2">
-<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white font-headline-sm text-sm font-bold transition-all shadow-[0_0_24px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#dc2626] hover:bg-[#ef4444] text-white font-headline-sm text-sm font-bold transition-all shadow-[0_0_24px_rgba(220,38,38,0.4)]" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[20px]">subscriptions</span>
 <span class="">Subscribe to @LEARNWITHANMOL-q3i</span>
 </a>
@@ -1085,14 +1085,14 @@
 <!-- Community Column -->
 <div class="lg:col-span-2 flex flex-col gap-3">
 <h4 class="font-headline-sm text-sm font-bold text-on-surface uppercase tracking-wider">Community</h4>
-<ul class="flex flex-col gap-2 text-xs"><li class=""><a class="hover:text-primary transition-colors flex items-center justify-between group" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" target="_blank" rel="noopener noreferrer" title="Join WhatsApp Channel"><span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 fill-current text-primary" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg><span class="">WhatsApp Channel</span></span><span class="px-1.5 py-0.5 rounded text-[9px] font-label-mono-sm bg-primary/15 text-primary border border-primary/30">New</span></a></li><li class=""><a class="hover:text-primary transition-colors flex items-center justify-between group" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn"><span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 fill-current text-secondary" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg><span class="">LinkedIn Profile</span></span><span class="px-1.5 py-0.5 rounded text-[9px] font-label-mono-sm bg-secondary/15 text-secondary border border-secondary/30">Connect</span></a></li><li class=""><a class="hover:text-[#ff7a73] transition-colors flex items-center gap-1.5" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[14px]">smart_display</span><span class="">YouTube Channel</span></a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Discord Server</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Telegram Discussion</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">GitHub Repository</a></li></ul>
+<ul class="flex flex-col gap-2 text-xs"><li class=""><a class="hover:text-primary transition-colors flex items-center justify-between group" href="https://whatsapp.com/channel/0029Vb8fc4Y1t90hknWrql2Z" target="_blank" rel="noopener noreferrer" title="Join WhatsApp Channel"><span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 fill-current text-primary" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.186 8.186 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"></path></svg><span class="">WhatsApp Channel</span></span><span class="px-1.5 py-0.5 rounded text-[9px] font-label-mono-sm bg-primary/15 text-primary border border-primary/30">New</span></a></li><li class=""><a class="hover:text-primary transition-colors flex items-center justify-between group" href="https://linkedin.com/in/anmol-singh-8b6641308?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn"><span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 fill-current text-secondary" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg><span class="">LinkedIn Profile</span></span><span class="px-1.5 py-0.5 rounded text-[9px] font-label-mono-sm bg-secondary/15 text-secondary border border-secondary/30">Connect</span></a></li><li class=""><a class="hover:text-[#ff7a73] transition-colors flex items-center gap-1.5" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[14px]">smart_display</span><span class="">YouTube Channel</span></a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Discord Server</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">Telegram Discussion</a></li><li class=""><a class="hover:text-primary transition-colors" href="#">GitHub Repository</a></li></ul>
 </div>
 <!-- Connect Column -->
 <div class="lg:col-span-2 flex flex-col gap-3">
 <h4 class="font-headline-sm text-sm font-bold text-on-surface uppercase tracking-wider">Connect</h4>
 <p class="text-xs text-on-surface-variant">Follow for lecture drops &amp; cheat sheets:</p>
 <div class="flex items-center gap-2 pt-1">
-<a aria-label="YouTube Channel" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-[#ff7a73] hover:bg-surface-container-high transition-colors" href="https://www.youtube.com/@LEARNWITHANMOL-q3i" rel="noopener noreferrer" target="_blank">
+<a aria-label="YouTube Channel" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-[#ff7a73] hover:bg-surface-container-high transition-colors" href="https://www.youtube.com/watch?v=PX7VZpHAgLk" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined text-[18px]">smart_display</span>
 </a>
 <a aria-label="GitHub" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="#">
