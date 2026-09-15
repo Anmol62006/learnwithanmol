@@ -67,6 +67,36 @@
       background-color: #10b981;
       color: #003824;
     }
+
+    /* Responsive fixes for phones and tablets */
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 640px) {
+      .java-playlist-image {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+      }
+      .java-playlist-card {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .mobile-safe {
+        max-width: 100% !important;
+        overflow: hidden !important;
+      }
+      header a, header button {
+        max-width: 100%;
+      }
+    }
   </style>
 <!-- Playlist image is embedded directly so it works on GitHub Pages and Netlify without a separate image upload. -->
 </head>
@@ -171,8 +201,8 @@
 <!-- Right Column: Large Java Playlist Preview -->
 <div class="lg:col-span-7">
   <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="block group">
-    <div class="relative rounded-2xl bg-surface-container-lowest border border-primary/40 shadow-2xl overflow-hidden hover:border-primary/70 transition-all duration-300 hover:-translate-y-1">
-      <img src="java-playlist.png" alt="Complete Java Tutorial in Hindi by Learn With Anmol" class="w-full h-auto block object-contain transition-transform duration-500 group-hover:scale-[1.01]">
+    <div class="relative rounded-2xl bg-surface-container-lowest border border-primary/40 shadow-2xl overflow-hidden hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 java-playlist-card">
+      <img src="java-playlist.png" alt="Complete Java Tutorial in Hindi by Learn With Anmol" class="w-full h-auto block object-contain java-playlist-image transition-transform duration-500 group-hover:scale-[1.01]">
       <div class="px-5 py-4 bg-surface-container border-t border-surface-container-highest flex items-center justify-between gap-3">
         <div>
           <p class="text-base font-bold text-on-surface">Complete Java Tutorial in Hindi</p>
@@ -433,7 +463,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-5 gap-7 items-stretch">
       <!-- Uploaded playlist preview image -->
       <a href="https://youtube.com/playlist?list=PLGv1PVd5hYNQ&si=AlgKVB69Q7mbzN7-9" target="_blank" rel="noopener noreferrer" class="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-surface-container-highest bg-surface-container shadow-2xl">
-        <img src="java-playlist.png" alt="Learn With Anmol Complete Java Tutorial YouTube Playlist" class="w-full h-auto aspect-video object-contain object-center transition-transform duration-500 group-hover:scale-[1.02]">
+        <img src="java-playlist.png" alt="Learn With Anmol Complete Java Tutorial YouTube Playlist" class="w-full h-auto aspect-video object-contain object-center java-playlist-image transition-transform duration-500 group-hover:scale-[1.02]">
         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent"></div>
         <div class="absolute left-5 right-5 bottom-5 flex items-center justify-between gap-3">
           <div>
